@@ -51,17 +51,19 @@
         app:layout_constraintBottom_toBottomOf="@+id/LowerBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSignUp"/>
 
     <Button
         android:id="@+id/buttonSignUp"
         android:layout_width="165dp"
         android:layout_height="53dp"
         android:text="REGISTRARSE"
-        app:layout_constraintBottom_toBottomOf="@+id/LowerBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSingIn" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonSingIn"
+        />
 
 
     <ImageView
@@ -78,29 +80,33 @@
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="221dp"
+        android:layout_height="48dp"
+        android:background="@drawable/edittext_background"
         android:ems="10"
         android:hint="  email"
         android:inputType="textEmailAddress"
-        android:background="@drawable/edittext_background"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.30"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/UserIcon"
-         />
+        app:layout_constraintWidth_percent="0.30" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="221dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_background"
         android:ems="10"
         android:hint="  contraseña"
-        android:background="@drawable/edittext_background"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="472dp" />
+        app:layout_constraintBottom_toTopOf="@id/buttonSingIn"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextEmailAddress"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
